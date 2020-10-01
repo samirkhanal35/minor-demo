@@ -1,6 +1,6 @@
 def recognize(img):
 	
-	import os
+	# import os
 	import tensorflow as tf
 	from tensorflow import keras
 
@@ -11,14 +11,14 @@ def recognize(img):
 	# import unicode as un
 	#import image
 	#from IPython import display
-	from matplotlib import cm
-	from matplotlib import gridspec
-	from matplotlib import pyplot as plt
+	# from matplotlib import cm
+	# from matplotlib import gridspec
+	# from matplotlib import pyplot as plt
 	import numpy as np
 	import pandas as pd
-	import seaborn as sns
+	# import seaborn as sns
 	from sklearn import metrics
-	from tensorflow.python.data import Dataset
+	# from tensorflow.python.data import Dataset
 	# tf.logging.set_verbosity(tf.logging.ERROR)
 	c = []
 	def create_model():
