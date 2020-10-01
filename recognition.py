@@ -19,7 +19,7 @@ def recognize(img):
 	import seaborn as sns
 	from sklearn import metrics
 	from tensorflow.python.data import Dataset
-	tf.logging.set_verbosity(tf.logging.ERROR)
+	# tf.logging.set_verbosity(tf.logging.ERROR)
 	c = []
 	def create_model():
 		model = tf.keras.models.Sequential([
