@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',    filename='css/reset.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',    filename='css/style.css') }}">
+  <!-- <link rel="stylesheet" type="text/css" href="../static/css/reset.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="../static/css/style.css"> -->
+  <title>Image Cartoonizing</title>
+</head>
+
+<body>
+  <div class="main_div">
+    <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script> -->
+    {% block title %}   
+
+    <div>
+      <h3 class="header">Minor Project(Nepali Digit Recognizer) Demo</h3>
+    </div>
+    {% endblock %}
+    
+
+    <hr />
+
+    <div class="page_buttons">
+      <div class="minor_button">
+        <form action="/" method="post">
+          <button name="minor_button" type="submit">Minor Demo</button>
+        </form>
+      </div>
+      <div class="major_button">
+        <form action="/major" method="post">
+          <button name="major_button" type="submit">Major Demo</button>
+        </form>
+      </div>
+
+    </div>
+    
+   <br/>
+   <div class="sample_header">Select the Sample Below</div>
+   
+    {% block content %}
+   
+
+    <div class='image_selection_1'>
+
+
+    </div>
+    <div class="wait_message"></div>
+    <script type="text/javascript" src="{{ url_for('static',    filename='js/main.js') }}"></script>
+
+    {% endblock %}
+    <!-- <br/> -->
+    <hr/>    
+
+    <div class="output_container">
+      {% if output %}
+      {{ output }}
+      {% endif %}
+    </div>
+
+  </div>
+
+  
+</body>
+
+</html>
