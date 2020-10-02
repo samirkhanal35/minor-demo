@@ -6,48 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',    filename='css/reset.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',    filename='css/style.css') }}">
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
   <title>Nepali Digit Recognizer</title>
 </head>
 
 <body>
   <div class="main_div">
-    
+
 
     <div>
-      <h3 class="header">Minor Project(Nepali Digit Recognizer) Demo</h3>
-    </div>
-    <br/>
-    <hr/>
-
-    <div class="desciption">
-      description
+      <h3 class="header">Minor Project Demo <br /> (Nepali Digit Recognizer)</h3>
     </div>
     
-    
-
     <hr />
 
+
+    <div class="desciption">
+      <b>Description: </b><br />
+      <p>
+      <ul>
+        <li>It is a sample demo of how 'Nepali Digit Recognizer' works.</li>
+        <li>In this demo, I have done all the image preprocessing using OpenCV which is originally done using Python
+          loops.</li>
+        <li>Its code can be found <a href="https://github.com/samirkhanal35/minor-demo">here</a>.</li>
+        <li>Its original project code can be found <a
+            href="https://github.com/samirkhanal35/Nepali-digit-recognizer">here</a>.</li>
+      </ul>
+      </p>
+      <hr/>
+      <p>
+        <ul>
+          <li>I have selected following image for demo because there are bold, small and large kinds of Nepali digits.</li>
+          <li>This demo might take 2-8 seconds due to the segmentation complexity which is not simplified in this demo.</li>
+        </ul>
+      </p>
+    </div>
     
-    
-   <br/>
-   <div class="sample_header">Click the Sample Below and wait for 2-5 seconds.</div>
-   
-   
-   
+    <hr />
+
+    <div class="sample_header"><b>Click the Sample Image Below and wait for 2-8 seconds.</b></div>
 
     <div class='image_selection_1'>
-
-
     </div>
-      
-    <hr/>    
 
-    <div class="output_container"> Output: <br/>
+    <div class="output_container"> Output: 
       {% if output %}
       {{ output }}
       {% endif %}
     </div>
+    <br/>
+    Expected Output: 1 2 3 4 6 0
+    <br/>
 
   </div>
 
