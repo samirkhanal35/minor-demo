@@ -17,7 +17,7 @@ def recognize(img):
 	import numpy as np
 	import pandas as pd
 	# import seaborn as sns
-	from sklearn import metrics
+	# from sklearn import metrics
 	# from tensorflow.python.data import Dataset
 	# tf.logging.set_verbosity(tf.logging.ERROR)
 	c = []
