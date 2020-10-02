@@ -2,9 +2,8 @@ def segFun(heighty,widthx,img):
     import numpy as np
     import image as img1
     import cv2 as cv
-    import gary_convert as gc
-    import binarize as br
     import recognition as rg
+    # print(img)
 
     c=[]
 
@@ -112,8 +111,9 @@ def segFun(heighty,widthx,img):
                         for j_s in range(1,ws):
                             img1[i_s,j_s]=img[i_nhigh + i_s , j_left + j_s]
                     #cv.imshow("demos(%d)"%iscount,img1)
-                    img1=cv.resize(img1,(32,32),interpolation = cv.INTER_CUBIC)
-                    c.append(rg.recognize(img1))
+                    # print(img1.shape)
+                    img2=cv.resize(img1,(32,32),interpolation = cv.INTER_CUBIC)
+                    c.append(rg.recognize(img2))
 
 
 
