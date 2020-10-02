@@ -1,6 +1,4 @@
 def recognize(img):
-	
-	# import os
 	import tensorflow as tf
 	from tensorflow import keras
 
@@ -8,18 +6,8 @@ def recognize(img):
 	import glob
 	import math
 	import os
-	# import unicode as un
-	#import image
-	#from IPython import display
-	# from matplotlib import cm
-	# from matplotlib import gridspec
-	# from matplotlib import pyplot as plt
 	import numpy as np
 	import pandas as pd
-	# import seaborn as sns
-	# from sklearn import metrics
-	# from tensorflow.python.data import Dataset
-	# tf.logging.set_verbosity(tf.logging.ERROR)
 	c = []
 	def create_model():
 		model = tf.keras.models.Sequential([
@@ -63,6 +51,3 @@ def recognize(img):
 	#c.append(un.unicode(classes))
 	# c = un.unicode(classes)
 	return (classes[0])
-
-
-	#print(c)

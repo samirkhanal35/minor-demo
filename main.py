@@ -17,7 +17,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
 
-@app.route('/', methods=['POST','GET'])
+@app.route('/')
 def minor():
     return render_template("minor.html")
 

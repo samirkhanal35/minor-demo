@@ -3,7 +3,7 @@ def segFun(heighty,widthx,img):
     import image as img1
     import cv2 as cv
     import recognition as rg
-    # print(img)
+    
 
     c=[]
 
