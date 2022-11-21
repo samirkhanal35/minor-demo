@@ -6,4 +6,4 @@ In this demo, I have done all the image preprocessing using OpenCV which is orig
 
 Its original project code can be found <a href="https://github.com/samirkhanal35/Nepali-digit-recognizer">here</a>.<br/><br/>
 
-It is hosted <a href="https://minor-major-demo.herokuapp.com/">here</a>.
+It is hosted <a href="https://minor-demo.herokuapp.com/">here</a>.
